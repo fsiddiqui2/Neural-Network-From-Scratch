@@ -126,7 +126,7 @@ for epoch in range(1, epochs+1):
     y_pred, cache = forward(X, parameters)
     loss = BCELoss(y_pred, y)
     losses.append(loss)
-    print(f"Epoch {epoch}: {loss}")
+    #print(f"Epoch {epoch}: {loss}")
 
     gradient = backprop(y_pred, y, cache, parameters)
     for param in parameters:
